@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^list/', list, name='list'),
     url(r'^view/(?P<num>[0-9]+)/$', view),
     url(r'^index/', index, name='index'),
+    url(r'^shopping/',shopping, name='shopping'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 

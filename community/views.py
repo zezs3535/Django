@@ -23,3 +23,6 @@ def view(request, num="1"):
 
 def index(request):
     return render(request, 'index.html')
+
+def shopping(request):
+    return render(request, 'shopping.html')
