@@ -2,6 +2,8 @@
 from __future__ import unicode_literals
 from community.forms import *
 from django.shortcuts import render
+from .crawling import Parsing
+from urllib2 import Request, urlopen
 
 def write(request):
     if request.method=="POST":
